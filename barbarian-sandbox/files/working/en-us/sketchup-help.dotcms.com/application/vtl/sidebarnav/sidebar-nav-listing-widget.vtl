@@ -1,0 +1,52 @@
+#if($UtilMethods.isSet($URLMapContent))
+    #set($currentContentType = $URLMapContent.contentType.name.replaceAll(" ",""))
+     <div class="rd-navbar-nav-wrap toggle-original-elements">
+        <ul style="list-style-type: none; align:left;">
+        #if($currentContentType == "GettingStartedGuide")
+            #foreach($con in $dotcontent.pull("+contentType:GettingStartedGuide +(conhost:484f5d7cbd1524bf3ebf383a4812bbc3 conhost:SYSTEM_HOST)",10,"GettingStartedGuide.title"))
+                #if($URLMapContent.title != $con.title)
+                    <li class="rd-nav-item">
+                    #if($n.active)
+                        <strong>
+                    #end 
+                        <a class="rd-nav-link" href="/help-center/getting-started/${con.urlTitle}">$!{con.title}</a>
+                    #if($n.active)
+                        </strong>
+                    #end 
+                    </li>
+                    <br />
+                #end
+            #end
+        #elseif($currentContentType == "TroubleshootingGuide")
+            #foreach($con in $dotcontent.pull("+contentType:TroubleshootingGuide +(conhost:484f5d7cbd1524bf3ebf383a4812bbc3 conhost:SYSTEM_HOST)",10,"TroubleshootingGuide.title"))
+                #if($URLMapContent.title != $con.title)
+                    <li class="rd-nav-item">
+                    #if($n.active)
+                        <strong>
+                    #end 
+                        <a class="rd-nav-link" href="/help-center/troublshooting/$!{con.urlTitle}">$!{con.title}</a>
+                    #if($n.active)
+                        </strong>
+                    #end 
+                    </li>
+                    <br />
+                #end
+            #end
+        #elseif($currentContentType == "UserGuide")
+            #foreach($con in $dotcontent.pull("+contentType:UserGuide +(conhost:484f5d7cbd1524bf3ebf383a4812bbc3 conhost:SYSTEM_HOST)",10,"UserGuide.title"))
+                #if($URLMapContent.title != $con.title)
+                    <li class="rd-nav-item">
+                    #if($n.active)
+                        <strong>
+                    #end 
+                        <a class="rd-nav-link" href="/help-center/user-guides/$!{con.urlTitle}">$!{con.title}</a>
+                    #if($n.active)
+                        </strong>
+                    #end 
+                    </li>
+                    <br />
+                #end
+            #end
+        #end
+    </div>
+#end

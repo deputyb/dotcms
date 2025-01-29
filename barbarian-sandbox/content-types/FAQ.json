@@ -1,0 +1,102 @@
+{
+  "clazz" : "SimpleContentType",
+  "id" : "3d4a8854-7696-40c2-b0f3-28c8ff1121f9",
+  "name" : "FAQ",
+  "variable" : "FAQ",
+  "modDate" : "2025-01-28T20:42:49.000+00:00",
+  "iDate" : "2020-01-07T20:39:48.000+00:00",
+  "host" : "SYSTEM_HOST",
+  "folder" : "SYSTEM_FOLDER",
+  "siteName" : "systemHost",
+  "folderPath" : "/",
+  "icon" : "help",
+  "baseType" : "CONTENT",
+  "fields" : [ {
+    "clazz" : "RowField",
+    "id" : "d3328ee9-edf4-4377-9349-50f5ab52fa41",
+    "modDate" : "2025-01-28T20:42:49.000+00:00",
+    "name" : "fields-0",
+    "fieldType" : "Row",
+    "fieldTypeLabel" : "Row",
+    "iDate" : "2020-01-07T20:39:48.000+00:00",
+    "variable" : "fields0",
+    "dataType" : "SYSTEM"
+  }, {
+    "clazz" : "ColumnField",
+    "id" : "37012401-1424-474d-b134-719b64f8cdf1",
+    "modDate" : "2025-01-28T20:42:49.000+00:00",
+    "name" : "fields-1",
+    "sortOrder" : 1,
+    "fieldType" : "Column",
+    "fieldTypeLabel" : "Column",
+    "iDate" : "2020-01-07T20:39:48.000+00:00",
+    "variable" : "fields1",
+    "dataType" : "SYSTEM"
+  }, {
+    "clazz" : "HostFolderField",
+    "indexed" : true,
+    "id" : "db81efc29febfe69116c455cef562072",
+    "modDate" : "2025-01-28T20:42:49.000+00:00",
+    "name" : "Site or Host",
+    "variable" : "siteOrHost",
+    "required" : true,
+    "sortOrder" : 2,
+    "fieldType" : "Host-Folder",
+    "fieldTypeLabel" : "Site or Folder",
+    "iDate" : "2025-01-15T18:48:08.000+00:00",
+    "dataType" : "SYSTEM"
+  }, {
+    "clazz" : "CategoryField",
+    "searchable" : true,
+    "indexed" : true,
+    "id" : "f76787d88e176d2fdc52aab3cdede7a8",
+    "modDate" : "2025-01-28T20:42:49.000+00:00",
+    "name" : "FAQ Category",
+    "variable" : "faqCategory",
+    "required" : true,
+    "sortOrder" : 3,
+    "values" : "11c2ae45d6a6ad243d88a1c768c157df",
+    "fieldType" : "Category",
+    "fieldTypeLabel" : "Category",
+    "iDate" : "2025-01-16T18:44:32.000+00:00",
+    "dataType" : "SYSTEM",
+    "categories" : {
+      "categoryName" : "FAQs",
+      "description" : null,
+      "inode" : "11c2ae45d6a6ad243d88a1c768c157df",
+      "key" : "faqs",
+      "keywords" : null,
+      "sortOrder" : 0
+    }
+  }, {
+    "clazz" : "TextField",
+    "searchable" : true,
+    "indexed" : true,
+    "listed" : true,
+    "id" : "52cfaa75-0a3a-4e92-b141-df5eab825979",
+    "modDate" : "2025-01-28T20:42:49.000+00:00",
+    "name" : "Question",
+    "variable" : "question",
+    "sortOrder" : 4,
+    "fieldType" : "Text",
+    "fieldTypeLabel" : "Text",
+    "iDate" : "2020-01-07T20:40:01.000+00:00",
+    "dataType" : "TEXT"
+  }, {
+    "clazz" : "WysiwygField",
+    "id" : "1e203433-ffb1-4e20-b80f-85fe0481c263",
+    "modDate" : "2025-01-28T20:42:49.000+00:00",
+    "name" : "Answer",
+    "variable" : "answer",
+    "sortOrder" : 5,
+    "fieldType" : "WYSIWYG",
+    "fieldTypeLabel" : "WYSIWYG",
+    "iDate" : "2020-01-07T20:40:12.000+00:00",
+    "dataType" : "LONG_TEXT"
+  } ],
+  "workflows" : [ {
+    "id" : "d61a59e1-a49c-46f2-a929-db2b4bfa88b2",
+    "variableName" : "SystemWorkflow"
+  } ],
+  "dotCMSObjectType" : "ContentType"
+}

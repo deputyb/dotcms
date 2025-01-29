@@ -1,0 +1,32 @@
+<!-- Container Code: /application/containers/default/card.vtl -->
+<div class="section-blog-post">
+    <div class="section-blog-post-header">
+        <h1
+            #if ($EDIT_MODE) 
+                data-language="${CONTENT_LANGUAGE}"
+                data-mode="minimal"
+                data-inode="$dotContentMap.inode"
+                data-field-name="title"      
+            #end
+        >$dotContentMap.title</h1>
+    </div>
+
+    <!-- PRODUCT RELEASE IMAGE -->
+    <div class="section-blog-post-figure">
+        <img class="img-fluid" src="/dA/$dotContentMap.identifier/935maxw/935cw/400ch/80q/12ro/$dotContentMap.image.name" alt="$dotContentMap.title">
+        <span class="badge badge-primary">$!{dotContentMap.tags.get(0)}</span>
+    </div>
+
+    <!-- PRODUCT RELEASE BODY -->
+    <div class="section-blog-post-content"
+        #if ($EDIT_MODE) 
+            data-language="${CONTENT_LANGUAGE}"
+            data-inode="$dotContentMap.inode"
+            data-field-name="cardContent"
+            data-content-type="Card"
+            data-contentlet-identifier="$dotContentMap.identifier"
+            data-block-editor-content="$esc.html($!{dotContentMap.cardContent})"
+        #end >
+        $!{dotContentMap.cardContent.toHtml('/application/block-editor/default/')}
+    </div>
+</div>

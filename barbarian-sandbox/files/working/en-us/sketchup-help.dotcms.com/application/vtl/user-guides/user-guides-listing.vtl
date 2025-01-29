@@ -1,0 +1,32 @@
+<div class="row">
+#foreach($con in $dotcontent.pull("+contentType:UserGuide +(conhost:484f5d7cbd1524bf3ebf383a4812bbc3 conhost:SYSTEM_HOST)",10,"UserGuide.title"))
+    <div class="col-md-6 col-lg-4 mb-5">
+        <div class="post post-modern post-height">
+            <a class="post-img-wrap" href="$!{con.urlTitle}"><img class="post-img" src="/dA/$con.identifier/image/480maxw/405cw/260ch/80q/13ro/$con.image.name" alt="$!{con.image.description}" height="300"></a>
+            <div class="post-body">
+                <div class="post-content">
+                    <p class="post-text"
+                    #if ($EDIT_MODE) 
+                        data-language="${CONTENT_LANGUAGE}"
+                        data-mode="minimal"
+                        data-inode="${con.inode}"
+                        data-field-name="description"      
+                    #end
+                    >$UtilMethods.prettyShortenString("$con.teaser", 120)</p>
+                </div>
+                <span class="badge-primary">
+                    <a class="badge badge-primary" href="$!{con.urlTitle}"
+                        #if ($EDIT_MODE) 
+                            data-language="${CONTENT_LANGUAGE}"
+                            data-mode="minimal"
+                            data-inode="${con.inode}"
+                            data-field-name="title"
+                        #end
+                        >
+                        $UtilMethods.prettyShortenString("$con.title", 35)</a></span>
+                </span>
+            </div>
+        </div>
+    </div>
+#end
+</div>

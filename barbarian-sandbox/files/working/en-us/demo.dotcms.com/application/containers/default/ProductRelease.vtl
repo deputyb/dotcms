@@ -1,0 +1,62 @@
+<!-- Container Code: /application/containers/ProductRelease.vtl -->
+<div class="section-blog-post">
+    #if($EDIT_MODE)
+        <div class="edit-button-wrapper" style="margin-bottom: 20px; margin-top :-20px;" data-dot-identifier="$dotContentMap.identifier" data-dot-inode="$dotContentMap.inode" data-dot-object="edit-content">
+            <span class="edit-button-icon" data-dot-identifier="$dotContentMap.identifier" data-dot-inode="$dotContentMap.inode" data-dot-object="edit-content"></span> 
+            <span class="edit-button-text" data-dot-identifier="$dotContentMap.identifier" data-dot-inode="$dotContentMap.inode" data-dot-object="edit-content">Edit $dotContentMap.contentType.name</span>
+        </div>
+    #end
+    <div class="section-blog-post-header">
+        <h1
+            #if ($EDIT_MODE) 
+                data-language="${CONTENT_LANGUAGE}"
+                data-mode="minimal"
+                data-inode="$dotContentMap.inode"
+                data-field-name="title"      
+            #end
+        >$dotContentMap.title</h1>
+        <div class="post-bottom-panel">
+            <div>
+                <div class="group-xl">
+                    #if( ${dotContentMap.author.size()} > 0)
+                        #set ($author= ${dotContentMap.author.get(0)})
+                        <div class="post-modern-author">
+                            <span class="post-icon icon mdi mdi-account"></span>
+                            <span>by $!{author.firstName} $!{author.lastName}</span>
+                        </div>
+                    #end
+                    <div class="post-modern-time">
+                        <span class="post-icon icon mdi mdi-calendar-clock"></span>
+                        <time datetime="2018-07-20 12:29">$date.format("MMMM dd, yyyy 'at' hh:mm aa", $!{dotContentMap.postingDate})</time>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PRODUCT RELEASE IMAGE -->
+    <div class="section-blog-post-figure">
+        <img class="img-fluid" src="/dA/$dotContentMap.identifier/935maxw/935cw/400ch/80q/12ro/$dotContentMap.image.name" alt="$dotContentMap.title">
+        <span class="badge badge-primary">$!{dotContentMap.tags.get(0)}</span>
+    </div>
+
+    <!-- PRODUCT RELEASE BODY -->
+    <div class="section-blog-post-content"
+        #if ($EDIT_MODE) 
+            data-language="${CONTENT_LANGUAGE}"
+            data-inode="$dotContentMap.inode"
+            data-field-name="productReleaseContent"
+            data-content-type="Product Release"
+            data-contentlet-identifier="$dotContentMap.identifier"
+            data-block-editor-content="$esc.html($!{dotContentMap.pressReleaseContent})"
+        #end >
+        $!{dotContentMap.pressReleaseContent.toHtml('/application/block-editor/default/')}
+    </div>
+
+    <!-- SOCIAL SHARES -->
+    <div class="group-xl text-center">
+        <a class="button button-md button-facebook button-icon button-icon-left button-leaf" href="https://www.facebook.com/dotCMS/"><span class="icon mdi mdi-facebook"></span>Facebook</a>
+        <a class="button button-md button-twitter button-icon button-icon-left button-leaf" href="https://twitter.com/dotcms"><span class="icon mdi mdi-twitter"></span>Twitter</a>
+        <a class="button button-md button-linkedin button-icon button-icon-left button-leaf" href="https://www.linkedin.com/company/2307658/"><span class="icon mdi mdi-linkedin"></span>LinkedIn</a>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+#set( $list = $navtool.getNav(1) )
+<div class="rd-navbar-nav-wrap toggle-original-elements">
+    <ul style="list-style-type: none;">
+    #foreach($n in $list)
+        <li class="rd-nav-item">
+            #if($n.active)
+                <strong>
+            #end 
+            <a class="rd-nav-link" href='${n.href}'>${n.title}</a> 
+            #if($n.active)
+                </strong>
+            #end
+        </li>
+        <br />
+        #end
+    <ul>    
+</div>

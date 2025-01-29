@@ -1,0 +1,6 @@
+<!-- VTL File: /application/vtl/breadcrumbs/breadcrumbs.vtl -->
+#set($breadCrumbOne = $navtool.getNav(1))
+#set($breadCrumbTwo = $navtool.getNav(2))
+<div class="container">
+        <a href="$!{breadCrumbOne.href}">$!{breadCrumbOne.title}</a> &gt; <a href="$!{breadCrumbTwo.href}">$!{breadCrumbTwo.title}</a>
+</div>

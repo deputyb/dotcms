@@ -1,0 +1,105 @@
+{
+  "clazz" : "WidgetContentType",
+  "id" : "36d5200a61cc2a8e6accba9d9eb758c5",
+  "name" : "Getting Started Listing Widget",
+  "variable" : "GettingStartedListing",
+  "modDate" : "2025-01-29T02:16:12.000+00:00",
+  "iDate" : "2025-01-17T19:30:24.000+00:00",
+  "host" : "SYSTEM_HOST",
+  "folder" : "SYSTEM_FOLDER",
+  "siteName" : "systemHost",
+  "folderPath" : "/",
+  "icon" : "widgets",
+  "baseType" : "WIDGET",
+  "fields" : [ {
+    "clazz" : "RowField",
+    "id" : "8b6b26a4edc196b818cf8d3d0f1b9e66",
+    "modDate" : "2025-01-28T20:43:26.000+00:00",
+    "name" : "Row Field",
+    "fieldType" : "Row",
+    "fieldTypeLabel" : "Row",
+    "iDate" : "2025-01-17T19:30:25.000+00:00",
+    "variable" : "rowField",
+    "dataType" : "SYSTEM"
+  }, {
+    "clazz" : "ColumnField",
+    "id" : "8693f5cf707b813ee679d33bfb8e10b3",
+    "modDate" : "2025-01-28T20:43:26.000+00:00",
+    "name" : "Column Field",
+    "sortOrder" : 1,
+    "fieldType" : "Column",
+    "fieldTypeLabel" : "Column",
+    "iDate" : "2025-01-17T19:30:25.000+00:00",
+    "variable" : "columnField",
+    "dataType" : "SYSTEM"
+  }, {
+    "clazz" : "TextField",
+    "searchable" : true,
+    "indexed" : true,
+    "listed" : true,
+    "id" : "4b9bbf67339aa13dda3ac85bce09264a",
+    "modDate" : "2025-01-28T20:43:26.000+00:00",
+    "name" : "Widget Title",
+    "variable" : "widgetTitle",
+    "required" : true,
+    "sortOrder" : 2,
+    "fixed" : true,
+    "fieldType" : "Text",
+    "fieldTypeLabel" : "Text",
+    "iDate" : "2025-01-17T19:30:24.000+00:00",
+    "dataType" : "TEXT"
+  }, {
+    "clazz" : "TextField",
+    "searchable" : true,
+    "indexed" : true,
+    "id" : "4dba2ff312562c75f0e6341bc62333e4",
+    "modDate" : "2025-01-28T20:43:26.000+00:00",
+    "name" : "Widget Usage",
+    "variable" : "widgetUsage",
+    "sortOrder" : 3,
+    "fieldType" : "Text",
+    "fieldTypeLabel" : "Text",
+    "iDate" : "2025-01-17T19:30:24.000+00:00",
+    "dataType" : "TEXT"
+  }, {
+    "clazz" : "ConstantField",
+    "searchable" : true,
+    "indexed" : true,
+    "readOnly" : true,
+    "id" : "7fdd6c3d032ab5fbd0cc06eb665a0d7a",
+    "modDate" : "2025-01-28T20:43:26.000+00:00",
+    "name" : "Widget Code",
+    "variable" : "widgetCode",
+    "sortOrder" : 4,
+    "values" : "#dotParse(\"/application/vtl/getting-started/getting-started-listing.vtl\")",
+    "fixed" : true,
+    "fieldType" : "Constant-Field",
+    "fieldTypeLabel" : "Constant Field",
+    "iDate" : "2025-01-17T19:30:24.000+00:00",
+    "dataType" : "SYSTEM"
+  }, {
+    "clazz" : "ConstantField",
+    "searchable" : true,
+    "indexed" : true,
+    "id" : "3492a862c383c81d81a96f1327cb4f47",
+    "modDate" : "2025-01-28T20:43:26.000+00:00",
+    "name" : "Widget Pre-Execute",
+    "variable" : "widgetPreexecute",
+    "sortOrder" : 5,
+    "fieldType" : "Constant-Field",
+    "fieldTypeLabel" : "Constant Field",
+    "iDate" : "2025-01-17T19:30:24.000+00:00",
+    "dataType" : "SYSTEM"
+  } ],
+  "metadata" : {
+    "CONTENT_EDITOR2_ENABLED" : false
+  },
+  "workflows" : [ {
+    "id" : "d61a59e1-a49c-46f2-a929-db2b4bfa88b2",
+    "variableName" : "SystemWorkflow"
+  } ],
+  "systemActionMappings" : {
+    "NEW" : "ceca71a0-deee-4999-bd47-b01baa1bcfc8"
+  },
+  "dotCMSObjectType" : "ContentType"
+}

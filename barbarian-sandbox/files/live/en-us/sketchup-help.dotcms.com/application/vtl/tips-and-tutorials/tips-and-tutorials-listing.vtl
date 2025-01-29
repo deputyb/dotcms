@@ -1,0 +1,21 @@
+<div class="row">
+    #foreach($con in $dotcontent.pull("+contentType:YouTube +(conhost:484f5d7cbd1524bf3ebf383a4812bbc3 conhost:SYSTEM_HOST)",10,"YouTube.title"))
+        <div class="col-md-6 col-lg-4 mb-5">
+            <div class="post post-modern post-height">
+                <!--<div class="post post-modern post-height">
+                    <a class="post-img-wrap" href="$!{con.url}"><img class="post-img" src="/dA/$con.identifier/image/480maxw/405cw/260ch/80q/13ro/$con.thumbnailLarge" alt="$!{con.image.description}" height="300"></a>-->
+                    <div class="post-body">
+                        <div class="post-content">
+                            <a class="video-cover bg-overlay-30 mb-5" data-lightbox="iframe" href="$!{con.url}">
+                                <div class="video-img" style="background-image: url($!{con.thumbnailLarge});"></div>
+                                <span class="icon mdi mdi-play video-cover-icon"></span>
+                            </a>
+                            <span class="badge badge-primary">$UtilMethods.prettyShortenString("$con.title", 35)</span>
+                        </div>
+                    </div>
+                <!--</div>-->
+            </div>
+        </div>
+    #end
+</div>
+

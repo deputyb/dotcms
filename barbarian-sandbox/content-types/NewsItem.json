@@ -1,0 +1,179 @@
+{
+  "clazz" : "SimpleContentType",
+  "id" : "fac5ed6ef7912199167e40aa77641801",
+  "name" : "News Item",
+  "variable" : "NewsItem",
+  "modDate" : "2024-10-15T17:25:06.000+00:00",
+  "iDate" : "2024-10-15T16:47:35.000+00:00",
+  "host" : "8a7d5e23-da1e-420a-b4f0-471e7da8ea2d",
+  "folder" : "SYSTEM_FOLDER",
+  "siteName" : "demo.dotcms.com",
+  "folderPath" : "/",
+  "icon" : "post_add",
+  "description" : "Create a news item, press release, or announcement.",
+  "baseType" : "CONTENT",
+  "fields" : [ {
+    "clazz" : "RowField",
+    "id" : "03fd4b31e285d667d6631aada7992b70",
+    "modDate" : "2024-10-15T17:10:16.000+00:00",
+    "name" : "fields-0",
+    "fieldType" : "Row",
+    "fieldTypeLabel" : "Row",
+    "iDate" : "2024-10-15T17:06:22.000+00:00",
+    "variable" : "fields3",
+    "dataType" : "SYSTEM"
+  }, {
+    "clazz" : "ColumnField",
+    "id" : "31963f6c97745a8ab03ef6b39d952412",
+    "modDate" : "2024-10-15T17:10:16.000+00:00",
+    "name" : "fields-1",
+    "sortOrder" : 1,
+    "fieldType" : "Column",
+    "fieldTypeLabel" : "Column",
+    "iDate" : "2024-10-15T17:06:22.000+00:00",
+    "variable" : "fields4",
+    "dataType" : "SYSTEM"
+  }, {
+    "clazz" : "TextField",
+    "searchable" : true,
+    "indexed" : true,
+    "listed" : true,
+    "id" : "afe0ef08ce87a074550e87b13ada552c",
+    "modDate" : "2024-10-15T17:15:20.000+00:00",
+    "name" : "Headline",
+    "variable" : "headline",
+    "sortOrder" : 2,
+    "fieldType" : "Text",
+    "fieldTypeLabel" : "Text",
+    "iDate" : "2024-10-15T16:58:07.000+00:00",
+    "dataType" : "TEXT"
+  }, {
+    "clazz" : "FileField",
+    "id" : "8ffe7bbc2bb5f232284625d4cee967a8",
+    "modDate" : "2024-10-15T17:15:02.000+00:00",
+    "name" : "File Upload",
+    "variable" : "fileUpload",
+    "sortOrder" : 3,
+    "fieldType" : "File",
+    "fieldTypeLabel" : "File",
+    "iDate" : "2024-10-15T17:15:02.000+00:00",
+    "dataType" : "TEXT"
+  }, {
+    "clazz" : "WysiwygField",
+    "searchable" : true,
+    "indexed" : true,
+    "id" : "68b2ee7c0d4dca52a340ff6af3aaba8e",
+    "modDate" : "2024-10-15T17:15:03.000+00:00",
+    "name" : "Content",
+    "variable" : "content",
+    "sortOrder" : 4,
+    "fieldType" : "WYSIWYG",
+    "fieldTypeLabel" : "WYSIWYG",
+    "iDate" : "2024-10-15T16:59:41.000+00:00",
+    "dataType" : "LONG_TEXT"
+  }, {
+    "clazz" : "RowField",
+    "id" : "2c1b2a34979cd5f5f59c2055deec0126",
+    "modDate" : "2024-10-15T17:15:03.000+00:00",
+    "name" : "fields-2",
+    "sortOrder" : 5,
+    "fieldType" : "Row",
+    "fieldTypeLabel" : "Row",
+    "iDate" : "2024-10-15T16:47:35.000+00:00",
+    "variable" : "fields0",
+    "dataType" : "SYSTEM"
+  }, {
+    "clazz" : "ColumnField",
+    "id" : "9f30421989ae0a458361a685871d7484",
+    "modDate" : "2024-10-15T17:15:03.000+00:00",
+    "name" : "fields-3",
+    "sortOrder" : 6,
+    "fieldType" : "Column",
+    "fieldTypeLabel" : "Column",
+    "iDate" : "2024-10-15T16:47:35.000+00:00",
+    "variable" : "fields1",
+    "dataType" : "SYSTEM"
+  }, {
+    "clazz" : "LineDividerField",
+    "id" : "ad96439ee44dc9c0df5a1770426fe87a",
+    "modDate" : "2024-10-15T17:15:03.000+00:00",
+    "name" : "SEO Details",
+    "variable" : "seoDetails",
+    "sortOrder" : 7,
+    "fieldType" : "Line_divider",
+    "fieldTypeLabel" : "Line Divider",
+    "iDate" : "2024-10-15T17:06:52.000+00:00",
+    "dataType" : "SYSTEM"
+  }, {
+    "clazz" : "TextField",
+    "id" : "372b651a4067a7080242a584e73a40e1",
+    "modDate" : "2024-10-15T17:15:03.000+00:00",
+    "name" : "Title Tag",
+    "variable" : "titleTag",
+    "sortOrder" : 8,
+    "fieldType" : "Text",
+    "fieldTypeLabel" : "Text",
+    "iDate" : "2024-10-15T17:06:22.000+00:00",
+    "dataType" : "TEXT"
+  }, {
+    "clazz" : "TextAreaField",
+    "id" : "8b13a9dc9656da3a632f1c3a13cf8b8d",
+    "modDate" : "2024-10-15T17:15:03.000+00:00",
+    "name" : "Meta Description",
+    "variable" : "metaDescription",
+    "sortOrder" : 9,
+    "fieldType" : "Textarea",
+    "fieldTypeLabel" : "Textarea",
+    "iDate" : "2024-10-15T17:06:35.000+00:00",
+    "dataType" : "LONG_TEXT"
+  }, {
+    "clazz" : "ColumnField",
+    "id" : "43d4ba53a7b9bb668255fd78016e8de7",
+    "modDate" : "2024-10-15T17:15:03.000+00:00",
+    "name" : "fields-4",
+    "sortOrder" : 10,
+    "fieldType" : "Column",
+    "fieldTypeLabel" : "Column",
+    "iDate" : "2024-10-15T17:02:59.000+00:00",
+    "variable" : "fields2",
+    "dataType" : "SYSTEM"
+  }, {
+    "clazz" : "DateField",
+    "searchable" : true,
+    "indexed" : true,
+    "listed" : true,
+    "id" : "f48001a40b17aed114875144c6a463e2",
+    "modDate" : "2024-10-15T17:15:11.000+00:00",
+    "name" : "Publish Date",
+    "variable" : "publishDate",
+    "sortOrder" : 11,
+    "fieldType" : "Date",
+    "fieldTypeLabel" : "Date",
+    "iDate" : "2024-10-15T17:02:33.000+00:00",
+    "dataType" : "DATE"
+  }, {
+    "clazz" : "TagField",
+    "searchable" : true,
+    "indexed" : true,
+    "id" : "db5caaa1e89b72f3c38ece0965e98e38",
+    "modDate" : "2024-10-15T17:15:14.000+00:00",
+    "name" : "Tag",
+    "variable" : "tag",
+    "sortOrder" : 12,
+    "fieldType" : "Tag",
+    "fieldTypeLabel" : "Tag",
+    "iDate" : "2024-10-15T17:00:28.000+00:00",
+    "dataType" : "SYSTEM"
+  } ],
+  "metadata" : {
+    "CONTENT_EDITOR2_ENABLED" : false
+  },
+  "workflows" : [ {
+    "id" : "d61a59e1-a49c-46f2-a929-db2b4bfa88b2",
+    "variableName" : "SystemWorkflow"
+  } ],
+  "systemActionMappings" : {
+    "NEW" : "ceca71a0-deee-4999-bd47-b01baa1bcfc8"
+  },
+  "dotCMSObjectType" : "ContentType"
+}
